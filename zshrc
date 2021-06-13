@@ -17,20 +17,21 @@ source $ZSH/oh-my-zsh.sh
 ### alias ###
 #############
 alias pacman='sudo pacman'
-alias journalctl='sudo journalctl'
 alias pacu='sudo pacman -Syu --noconfirm'
 alias flatup='flatpak update -yy'
 alias systemctl='sudo systemctl'
 alias chown='sudo chown'
 alias grep='grep --color=auto'
-alias ls='ls -hl --color=auto'
+alias ls='lsd -hl'
+alias lsa='lsd -hla'
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
 alias mkdir="mkdir -pv"
 alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
-alias mde='/home/anno/Programm/Typora-linux-x64/Typora '
+#alias apm='/home/anno/Programm/atom-1.54.0-amd64/resources/app/apm/bin/apm '
+#alias atom='/home/anno/Programm/atom-1.54.0-amd64/atom '
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -43,20 +44,7 @@ alias web='cd /home/anno/coding/Web-site/git-andranux_de'
 alias my='cd /home/anno/coding/git_my'
 alias qd='cd /home/l-file/qemu'
 alias down='cd /home/anno/Downloads'
-
-### Fuction ###
-###############
-
-# make a tar
-function mt() {
-	tar cvzf "${1%%/}.tar.gz" "${1%%/}/";
-}
-
-# make a zip
-function mz() {
-	zip -r "${1%%/}.zip" "$1";
-}
-
+alias l-file='cd /home/l-file'
 
 
 ### themes ###
@@ -76,7 +64,7 @@ bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 HISTFILE=$HOME/.zhistory
-HISTSIZE=1000000000
+HISTSIZE=1000000000 
 SAVEHIST=1000000000
 
 

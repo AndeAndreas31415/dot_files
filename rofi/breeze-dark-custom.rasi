@@ -131,3 +131,7 @@
 #prompt {
     padding: 3 7 3 0;
 }
+
+element-icon {
+    size: 1.2em;
+}
