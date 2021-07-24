@@ -1,0 +1,67 @@
+/* general */
+* {
+  bc: rgba(20, 20, 20, 75%);
+  bl: rgba(20, 20, 20, 40%);
+  background-color: rgba(0,0,0,0%);
+  text-color: rgba(255,255,255,95%);
+  border-radius: 5px;
+}
+
+/* searchbar on top */
+inputbar {
+  background-color: @bc;
+  margin: 0 0 10px 0;
+}
+
+prompt {
+  padding: 14px 8px; 
+}
+
+entry {
+  background-color: rgba(255,0,0,10%);
+  margin: 5px;
+  padding: 9px 8px; 
+}
+
+/* text from scripts and from anthor */
+textbox {
+  background-color: @bc;
+  padding: 8px 16px; 
+}
+
+/* choices from the list with items */
+listview {
+  background-color: @bl;
+}
+
+element {
+  background-color: @bc;
+  padding: 8px;
+}
+
+element selected {
+  background-color: rgba(1,255,6, 75%);
+  color: black;
+}
+
+element-icon {
+  size: 24px;
+}
+
+/* switcher between mods*/
+mode-switcher{
+  background-color: rgba(0,0,0,0%);
+  padding: 5px 0 0 0;
+}
+
+button {
+  border-radius: 7px;
+  background-color: @bc;
+  padding: 5px;
+}
+
+button selected {
+  border: 2px;
+  border-color: rgba(0,135,255, 75%);
+  border-radius: 20px;
+}
