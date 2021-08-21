@@ -30,8 +30,7 @@ alias mv='mv -v'
 alias mkdir="mkdir -pv"
 alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
-#alias apm='/home/anno/Programm/atom-1.54.0-amd64/resources/app/apm/bin/apm '
-#alias atom='/home/anno/Programm/atom-1.54.0-amd64/atom '
+alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
 
 alias ..='cd ..'
 alias ...='cd ../..'
