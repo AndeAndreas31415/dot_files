@@ -8,6 +8,9 @@ calcTimeDiff(){
 	time=$(date --date "$1" +%s)
 #	echo $time "-" $now "\n"
 	diff=$((time - now))
+	if [[ $diff == "-"* ]]; then
+		./start_cown.sh minus
+	fi
 #	echo $diff
 	countdown $diff
 }
@@ -23,4 +26,9 @@ countdown(){
     done
 }
 
+if [[ $1 == "+"* ]]; then
+	countdown $1
+fi
+
 calcTimeDiff $1
+

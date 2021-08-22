@@ -28,5 +28,5 @@ conky.config = {
 }
 
 conky.text = [[
-${exec cat ./time.txt}
+${exec cat time.txt}
 ]]
