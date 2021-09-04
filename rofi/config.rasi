@@ -1,19 +1,20 @@
 configuration {
 	modi: "calc,drun,window,shortcuts:/home/anno/coding/bash-script/short_rofi/rofi-shortcut.sh";
-	width: 50;
-	lines: 10;
-	columns: 2;
-	font: "SourceHanSans 11";
+	font: "SourceHanSans 12";
 	show-icons: true;
 	terminal: "xfce4-terminal";
 	icon-theme: "Numix-Circle";
 	cycle: true;
 	sidebar-mode: true;
-	hide-scrollbar: true;
 	theme: "/home/anno/.config/rofi/Andranux.rasi";
 	kb-move-word-back: "Alt+b";
 	kb-move-word-forward: "Alt+f";
 	kb-mode-next: "Control+Right";
 	kb-mode-previous: "Control+Left";
 	kb-cancel: "Escape";
+	
+  timeout {
+      delay:  10;
+      action: "kb-cancel";
+  }
 }

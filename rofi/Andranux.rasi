@@ -14,7 +14,7 @@ inputbar {
 }
 
 prompt {
-  padding: 14px 8px; 
+  padding: 14px 8px;
 }
 
 entry {
@@ -32,6 +32,8 @@ textbox {
 /* choices from the list with items */
 listview {
   background-color: @bl;
+  columns: 3;
+  lines: 10;
 }
 
 element {
@@ -45,9 +47,16 @@ element selected {
 }
 
 element-icon {
-  size: 24px;
+  size: 32px;
 }
 
+element-text {
+  vertical-align: 0.55;
+}
+
+element-text selected {
+  color: black;
+}
 /* switcher between mods*/
 mode-switcher{
   background-color: rgba(0,0,0,0%);
