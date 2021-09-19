@@ -2,6 +2,8 @@
 #################
 export ZSH="/home/anno/.zsh/plugin/oh-my-zsh"
 
+PATH=$PATH:/home/anno/.local/bin
+
 
 ### plugin ###
 ##############
