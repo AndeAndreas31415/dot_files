@@ -20,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 #############
 alias pacman='sudo pacman'
 alias pacu='sudo pacman -Syu --noconfirm'
+alias yayup='yay -Syu --noconfirm'
 alias flatup='flatpak update -yy'
 alias systemctl='sudo systemctl'
 alias chown='sudo chown'
@@ -29,7 +30,7 @@ alias lsa='lsd -hla'
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
-alias mkdir="mkdir -pv"
+alias mkdir='mkdir -pv'
 alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
 alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
