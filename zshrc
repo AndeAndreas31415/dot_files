@@ -36,14 +36,18 @@ alias :q='exit'
 alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
 
 alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
+alias ....='cd ../..'
+alias ......='cd ../../..'
+alias ........='cd ../../../..'
+alias ..........='cd ../../../../..'
 
+# project #
 alias short-rofi='cd /home/anno/coding/bash-script/short_rofi'
 alias web='cd /home/anno/coding/Web-site/git-andranux_de'
 alias my='cd /home/anno/coding/git_my'
+alias macli='cd /home/anno/coding/golang/matrix-bot/matcli'
+alias dotconf='cd /home/anno/.dotconf'
+
 alias qd='cd /home/l-file/qemu'
 alias down='cd /home/anno/Downloads'
 alias l-file='cd /home/l-file'
