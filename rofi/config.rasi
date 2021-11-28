@@ -6,7 +6,6 @@ configuration {
 	icon-theme: "Numix-Circle";
 	cycle: true;
 	sidebar-mode: true;
-	theme: "/home/anno/.config/rofi/Andranux.rasi";
 	kb-move-word-back: "Alt+b";
 	kb-move-word-forward: "Alt+f";
 	kb-mode-next: "Control+Right";
@@ -18,3 +17,4 @@ configuration {
       action: "kb-cancel";
   }
 }
+@theme "/home/anno/.config/rofi/Andranux.rasi"
