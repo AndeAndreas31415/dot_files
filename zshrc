@@ -34,6 +34,7 @@ alias mkdir='mkdir -pv'
 alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
 alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
+alias https-server='sudo python /home/anno/coding/python/https_server/https.py'
 
 alias ..='cd ..'
 alias ....='cd ../..'
