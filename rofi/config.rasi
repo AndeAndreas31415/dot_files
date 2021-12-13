@@ -11,10 +11,5 @@ configuration {
 	kb-mode-next: "Control+Right";
 	kb-mode-previous: "Control+Left";
 	kb-cancel: "Escape";
-	
-  timeout {
-      delay:  10;
-      action: "kb-cancel";
-  }
 }
 @theme "/home/anno/.config/rofi/Andranux.rasi"
