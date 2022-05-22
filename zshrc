@@ -49,6 +49,8 @@ alias my='cd /home/anno/coding/git_my'
 alias macli='cd /home/anno/coding/golang/matrix-bot/matcli'
 alias dotconf='cd /home/anno/.dotconf'
 
+alias git_manga='git add weeb/manga.html && git commit -m "add new mangas" && git push'
+
 alias qd='cd /home/l-file/qemu'
 alias down='cd /home/anno/Downloads'
 alias l-file='cd /home/l-file'
