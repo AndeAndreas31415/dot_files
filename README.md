@@ -8,6 +8,7 @@
 |conky|desktop widget|
 |firefoxCss|~/.mozilla/firefox/$profil/chrome|
 |rofi|~/.config/rofi|
+|starship|~/.config/starship.toml|
 |tmux.conf|~/.tmux.conf|
 |vimrc|~/.vimrc|
 |xfce-applications.menu|~/.config/menus/xfce-applications.menu|

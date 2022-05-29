@@ -1,0 +1,38 @@
+# https://starship.rs/config/
+
+format ='''🐧「$username@$hostname」⁅ $directory ⁆$git_branch$git_status 👻 $character'''
+
+[character]
+success_symbol = "[➤](bold green)"
+error_symbol = "[➤](bold red)"
+
+[directory]
+truncation_length = 10
+fish_style_pwd_dir_length = 10
+format = "[$path$lock_symbol](blue)"
+
+[line_break]
+disabled = true
+
+[username]
+format = "[$user](bold yellow)"
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold yellow)"
+trim_at = ".companyname.com"
+
+[git_branch]
+symbol = "🌱"
+truncation_length = 5
+format = '[\[ $branch(:$remote_branch) $symbol ]($style)'
+
+[git_status]
+conflicted = "[✖](red)"
+ahead = "[↑${count}](yellow)"
+behind = "[↓${count}](yellow)"
+untracked = "[…${count}](cyan)"
+modified = "[✚ ${count}](blue)"
+staged = "[●${count}](red)"
+format = '|$all_status/$ahead/$behind \]'

@@ -1,6 +1,6 @@
 ### varialbes ###
 #################
-export ZSH="/home/anno/.zsh/plugin/oh-my-zsh"
+# export ZSH="/home/anno/.zsh/plugin/oh-my-zsh"
 
 PATH=$PATH:/home/anno/.local/bin
 
@@ -9,11 +9,11 @@ PATH=$PATH:/home/anno/.local/bin
 ##############
 source /home/anno/.zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/anno/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
-plugins=(
-	git
-	git-prompt
- 	)
-source $ZSH/oh-my-zsh.sh
+# plugins=(
+# 	git
+# 	git-prompt
+#  	)
+# source $ZSH/oh-my-zsh.sh
 
 
 ### alias ###
@@ -55,14 +55,6 @@ alias qd='cd /home/l-file/qemu'
 alias down='cd /home/anno/Downloads'
 alias l-file='cd /home/l-file'
 
-
-### themes ###
-##############
-autoload -Uz colors && colors
-
-# I have a ghost in a shell
-PROMPT="%F{238}[%f%{$terminfo[bold]%}%F{226}%n@%m%f%{$reset_color%}%F{238}]%f%F{243}ϾϿ%f%F{250} [%f%F{33}%~%f%F{250}] 👻 %{$terminfo[bold]%}%F{2}➜%f%{$reset_color%} "
-
 ### History ###
 ###############
 autoload -U history-search-end
@@ -94,3 +86,13 @@ zstyle ':completion:*' group-name ''
 setopt correct
 
 SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (Yes, No, Abort, Edit) "
+
+
+### themes ###
+##############
+autoload -Uz colors && colors
+
+# I have a ghost in a shell
+# PROMPT="%F{238}[%f%{$terminfo[bold]%}%F{226}%n@%m%f%{$reset_color%}%F{238}]%f%F{243}ϾϿ%f%F{250} [%f%F{33}%~%f%F{250}] 👻 %{$terminfo[bold]%}%F{2}➜%f%{$reset_color%} "
+
+eval "$(starship init zsh)"
