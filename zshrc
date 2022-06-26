@@ -35,6 +35,7 @@ alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
 alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
 alias https-server='sudo python /home/anno/coding/python/https_server/https.py'
+alias fkill='kill $(ps -u $USER -o pid,command|fzf|awk "{print \$1}")'
 
 alias ..='cd ..'
 alias ....='cd ../..'
@@ -72,14 +73,11 @@ SAVEHIST=1000000000
 ### auto completion ###
 #######################
 autoload -U compinit && compinit
-zstyle ':completion:*' menu select
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 zstyle ':completion:*' verbose yes
-zstyle ':completion:*:descriptions' format '%B%d%b'
-zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' group-name ''
-
+zstyle ':completion:*:descriptions' format "$fg[green]%B-%d-%b"
 
 ### wrong commands ###
 ######################
@@ -91,8 +89,5 @@ SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (Yes, No, A
 ### themes ###
 ##############
 autoload -Uz colors && colors
-
-# I have a ghost in a shell
-# PROMPT="%F{238}[%f%{$terminfo[bold]%}%F{226}%n@%m%f%{$reset_color%}%F{238}]%f%F{243}ϾϿ%f%F{250} [%f%F{33}%~%f%F{250}] 👻 %{$terminfo[bold]%}%F{2}➜%f%{$reset_color%} "
 
 eval "$(starship init zsh)"
