@@ -8,6 +8,7 @@
 |conky|desktop widget|
 |firefoxCss|~/.mozilla/firefox/$profil/chrome|
 |kitty|~/.config/kitty/kitty.conf|
+|Mnagohud|~/.config/MangoHud/MangoHud.conf|
 |rofi|~/.config/rofi|
 |starship|~/.config/starship.toml|
 |tmux.conf|~/.tmux.conf|
