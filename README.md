@@ -14,5 +14,6 @@
 |tmux.conf|~/.tmux.conf|
 |vimrc|~/.vimrc|
 |xfce-applications.menu|~/.config/menus/xfce-applications.menu|
+|xfce4-keyboard-shortcuts.xml|~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml|
 |zshrc|~/.zshrc|
 
