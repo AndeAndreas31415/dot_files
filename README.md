@@ -7,10 +7,10 @@
 |:-:|:-:|
 |conky|desktop widget|
 |firefoxCss|~/.mozilla/firefox/$profil/chrome|
-|kitty|~/.config/kitty/kitty.conf|
-|Mnagohud|~/.config/MangoHud/MangoHud.conf|
+|kitty.conf|~/.config/kitty/kitty.conf|
+|Mangohud.conf|~/.config/MangoHud/MangoHud.conf|
 |rofi|~/.config/rofi|
-|starship|~/.config/starship.toml|
+|starship.toml|~/.config/starship.toml|
 |tmux.conf|~/.tmux.conf|
 |vimrc|~/.vimrc|
 |xfce-applications.menu|~/.config/menus/xfce-applications.menu|
