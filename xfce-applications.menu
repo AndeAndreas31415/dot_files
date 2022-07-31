@@ -1,38 +1,55 @@
-<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
-  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
 <Menu>
-    <Name>Xfce</Name>
-
-    <DefaultAppDirs/>
-    <DefaultDirectoryDirs/>
-
-    <Include>
-        <Category>X-Xfce-Toplevel</Category>
-    </Include>
-
-    <Layout>
-        <Filename>xfce4-terminal-emulator.desktop</Filename>
-        <Filename>xfce4-file-manager.desktop</Filename>
-        <Filename>xfce4-web-browser.desktop</Filename>
-        <Separator/>
-        <Menuname>Settings</Menuname>
-        <Separator/>
-        <Filename>xfce4-session-logout.desktop</Filename>
-    </Layout>
-
-    <Menu>
-        <Name>Settings</Name>
-        <Directory>xfce-settings.directory</Directory>
-        <Include>
-            <Category>Settings</Category>
-        </Include>
-
-        <Layout>
-            <Filename>xfce-settings-manager.desktop</Filename>
-            <Separator/>
-            <Merge type="all"/>
-        </Layout>
-    </Menu>    
-    <DefaultMergeDirs/>
+	<Name>Xfce</Name>
+	<DefaultAppDirs />
+	<DefaultDirectoryDirs />
+	<DefaultMergeDirs />
+	<Include>
+		<Category>X-Xfce-Toplevel</Category>
+	</Include>
+	<MergeFile type="parent">/etc/xdg/menus/xfce-applications.menu</MergeFile>
+	<Menu>
+		<Name>Settings</Name>
+		<Directory>xfce-settings.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>xfce-settings-manager.desktop</Filename>
+			<Separator />
+			<Filename>xfce4-accessibility-settings.desktop</Filename>
+			<Filename>nm-connection-editor.desktop</Filename>
+			<Filename>xfce-ui-settings.desktop</Filename>
+			<Filename>xfce4-color-settings.desktop</Filename>
+			<Filename>xfce4-mime-settings.desktop</Filename>
+			<Filename>xfce-backdrop-settings.desktop</Filename>
+			<Filename>xfce-display-settings.desktop</Filename>
+			<Filename>thunar-settings.desktop</Filename>
+			<Filename>org.kde.kdeconnect-settings.desktop</Filename>
+			<Filename>xfce-keyboard-settings.desktop</Filename>
+			<Filename>menulibre.desktop</Filename>
+			<Filename>xfce-mouse-settings.desktop</Filename>
+			<Filename>xfce4-notifyd-config.desktop</Filename>
+			<Filename>nvidia-settings.desktop</Filename>
+			<Filename>panel-preferences.desktop</Filename>
+			<Filename>xfce4-power-manager-settings.desktop</Filename>
+			<Filename>pavucontrol.desktop</Filename>
+			<Filename>thunar-volman-settings.desktop</Filename>
+			<Filename>xfce-session-settings.desktop</Filename>
+			<Filename>xfce4-settings-editor.desktop</Filename>
+			<Filename>xfce-wm-settings.desktop</Filename>
+			<Filename>xfce-wmtweaks-settings.desktop</Filename>
+			<Filename>xfce-workspaces-settings.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Layout>
+		<Filename>xfce4-terminal-emulator.desktop</Filename>
+		<Filename>xfce4-file-manager.desktop</Filename>
+		<Separator />
+		<Menuname>Settings</Menuname>
+		<Separator />
+		<Filename>xfce4-session-logout.desktop</Filename>
+	</Layout>
 </Menu>
