@@ -6,12 +6,12 @@ augroup transparent_bg | au!
     au Colorscheme * hi Normal ctermbg=NONE
 augroup END
 
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 " autocompletion plugin
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'} 
+"Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'} 
 " plantuml syntax import
-Plug 'aklt/plantuml-syntax'
-call plug#end()
+"Plug 'aklt/plantuml-syntax'
+"call plug#end()
 
 "rename mode name 
 let g:currentmode={ 'n'  : 'Normal',
