@@ -1,9 +1,9 @@
 /* general */
 * {
-  bc: rgba(20, 20, 20, 75%);
-  bl: rgba(20, 20, 20, 40%);
-  background-color: rgba(0,0,0,0%);
-  text-color: rgba(255,255,255,95%);
+  bc: rgba(20, 20, 20, 85%);
+  bl: rgba(10, 10, 10, 40%);
+  background-color: #00000000;
+  text-color: #ffffff;
   border-radius: 5px;
 }
 
@@ -11,43 +11,56 @@
 inputbar {
   background-color: @bc;
   margin: 0 0 5px 0;
+  border: 4px;
+  border-color: #000000;
 }
 
 prompt {
-  padding: 14px 8px;
+  enabled: false;
 }
 
 entry {
-  background-color: rgba(255,0,0,10%);
-  margin: 5px;
-  padding: 9px 8px; 
+  background-color: #00000064;
+  margin: 5px 0 5px 5px;
+  padding: 9px; 
+  border: 1px;
+  border-color: #ffffff80;
+  placeholder: "Searching ...";
+  placeholder-color: #ffffff7f;
 }
 
 /* text from scripts and from anthor */
 textbox {
   background-color: @bc;
-  padding: 8px 16px; 
+  padding: 8px 16px;
+  border: 4px;
+  border-color: #000000;
 }
 
 /* choices from the list with items */
 listview {
-  background-color: @bl;
+  background-color: @bc;
   columns: 3;
   lines: 10;
+  border: 4px;
+  border-color: #000000;
 }
 
 element {
-  background-color: @bc;
-  padding: 8px;
+  background-color: @background-color;
+  padding: 10px;
 }
 
 element selected {
-  background-color: rgba(1,255,6, 75%);
+  background-color: #00ff00bf;
   color: black;
+  border: 0px 15px 0px 15px;
+  border-color: #0000007f;
 }
 
 element-icon {
   size: 32px;
+  padding: 0 0 0 15px;
 }
 
 element-text {
@@ -57,20 +70,24 @@ element-text {
 element-text selected {
   color: black;
 }
+
 /* switcher between mods*/
 mode-switcher{
-  background-color: rgba(0,0,0,0%);
-  padding: 5px 0 0 0;
+  background-color: @bc;
+  margin: 5px 0 0 0;
+  border: 4px;
+  border-color: #000000;
 }
 
 button {
   border-radius: 7px;
-  background-color: @bc;
-  padding: 5px;
+  background-color: @background-color;
+  padding: 2px;
 }
 
 button selected {
-  border: 2px;
-  border-color: rgba(0,135,255, 75%);
-  border-radius: 20px;
+  background-color: #007fffbf;
+  color: black;
+  border: 0px 20px 0px 20px;
+  border-color: #0000007f;
 }
