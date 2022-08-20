@@ -1,19 +1,7 @@
-### varialbes ###
-#################
-# export ZSH="/home/anno/.zsh/plugin/oh-my-zsh"
-
-PATH=$PATH:/home/anno/.local/bin
-
-
 ### plugin ###
 ##############
 source /home/anno/.zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/anno/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
-# plugins=(
-# 	git
-# 	git-prompt
-#  	)
-# source $ZSH/oh-my-zsh.sh
 
 
 ### alias ###
@@ -35,7 +23,7 @@ alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
 alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
 alias https-server='sudo python /home/anno/coding/python/https_server/https.py'
-alias fkill='kill $(ps -u $USER -o pid,command|fzf|awk "{print \$1}")'
+alias autostart='vim /home/anno/coding/bash-script/start_setup.sh'
 
 alias ..='cd ..'
 alias ....='cd ../..'
@@ -82,12 +70,9 @@ zstyle ':completion:*:descriptions' format "$fg[green]%B-%d-%b"
 ### wrong commands ###
 ######################
 setopt correct
-
 SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (Yes, No, Abort, Edit) "
-
 
 ### themes ###
 ##############
 autoload -Uz colors && colors
-
 eval "$(starship init zsh)"
