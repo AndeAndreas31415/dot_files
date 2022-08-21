@@ -10,6 +10,7 @@
 |kitty.conf|~/.config/kitty/kitty.conf|
 |Mangohud.conf|~/.config/MangoHud/MangoHud.conf|
 |rofi|~/.config/rofi|
+|stalonetrayrc|~/.config/stalonetrayrc|
 |starship.toml|~/.config/starship.toml|
 |tmux.conf|~/.tmux.conf|
 |vimrc|~/.vimrc|
