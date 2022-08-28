@@ -10,6 +10,7 @@
 |kitty.conf|~/.config/kitty/kitty.conf|
 |Mangohud.conf|~/.config/MangoHud/MangoHud.conf|
 |neofetch|~/.config/neofetch|
+|picom|~/.config/picom|
 |rofi|~/.config/rofi|
 |stalonetrayrc|~/.config/stalonetrayrc|
 |starship.toml|~/.config/starship.toml|
