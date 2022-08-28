@@ -9,6 +9,7 @@
 |firefoxCss|~/.mozilla/firefox/$profil/chrome|
 |kitty.conf|~/.config/kitty/kitty.conf|
 |Mangohud.conf|~/.config/MangoHud/MangoHud.conf|
+|neofetch|~/.config/neofetch|
 |rofi|~/.config/rofi|
 |stalonetrayrc|~/.config/stalonetrayrc|
 |starship.toml|~/.config/starship.toml|
