@@ -11,6 +11,7 @@
 |Mangohud.conf|~/.config/MangoHud/MangoHud.conf|
 |neofetch|~/.config/neofetch|
 |picom|~/.config/picom|
+|polybar|~/.config/polybar|
 |rofi|~/.config/rofi|
 |stalonetrayrc|~/.config/stalonetrayrc|
 |starship.toml|~/.config/starship.toml|
