@@ -5,7 +5,7 @@ conky.config = {
     cpu_avg_samples = 2,
     default_color = '#eeeeee',
     double_buffer = true,
-    font = 'Open Sans:size=40',
+    font = 'Open Sans:size=35',
     gap_x = 0,
     gap_y = 0,
     minimum_height = 5,
@@ -19,6 +19,7 @@ conky.config = {
     own_window = true,
     own_window_transparent = false,
     own_window_argb_visual = true,
+    own_window_argb_value = 190,
     own_window_type = 'desktop',
     own_window_hints = 'above,sticky',
     show_graph_range = false,
@@ -28,5 +29,6 @@ conky.config = {
 }
 
 conky.text = [[
-${exec cat time.txt}
+${font}${exec cat time.txt|head -n 1}
+${font Open Sans:size=20}${alignc}${exec cat time.txt|tail -1}
 ]]

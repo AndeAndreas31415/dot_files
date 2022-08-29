@@ -26,6 +26,6 @@ fi
 
 cd $DIR
 
-exec $DIR/countdown.sh $1 &
+exec $DIR/countdown.sh $@ &
 
 exec conky -c $DIR/Countdown
