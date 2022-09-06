@@ -42,11 +42,11 @@
       </property>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;c" type="string" value="/home/anno/coding/bash-script/color_key.sh"/>
-      <property name="&lt;Super&gt;KP_Add" type="string" value="pactl set-sink-volume 1 +5%"/>
-      <property name="&lt;Super&gt;KP_Subtract" type="string" value="pactl set-sink-volume 1 -5%"/>
-      <property name="Print" type="string" value="/home/anno/coding/bash-script/screenshot.sh"/>
       <property name="&lt;Super&gt;Control_L" type="string" value="rofi -show drun"/>
       <property name="&lt;Super&gt;Shift_L" type="string" value="rofi -show window"/>
+      <property name="Print" type="string" value="/home/anno/coding/bash-script/screenshot.sh"/>
+      <property name="AudioRaiseVolume" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +5%"/>
+      <property name="AudioLowerVolume" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -5%"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
