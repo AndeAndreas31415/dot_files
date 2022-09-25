@@ -1,7 +1,14 @@
 ### plugin ###
 ##############
-source /home/anno/.zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/anno/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+### mod vari ###
+################
+if [ -d "$HOME/coding/bash-script" ] ; then
+	PATH="$PATH:$HOME/coding/bash-script"
+fi
 
 
 ### alias ###
@@ -21,9 +28,10 @@ alias mv='mv -v'
 alias mkdir='mkdir -pv'
 alias dfh='df -h | grep -E "(File|mapper|boot)" | head'
 alias :q='exit'
-alias countdown='/home/anno/.dotconf/conky/countdown_conky/start_cown.sh'
-alias https-server='sudo python /home/anno/coding/python/https_server/https.py'
-alias autostart='vim /home/anno/coding/bash-script/start_setup.sh'
+alias countdown='$HOME/.dotconf/conky/countdown_conky/start_cown.sh'
+alias https-server='sudo python $HOME/coding/python/https_server/https.py'
+
+alias down='cd $HOME/Downloads'
 
 alias ..='cd ..'
 alias ....='cd ../..'
@@ -32,17 +40,14 @@ alias ........='cd ../../../..'
 alias ..........='cd ../../../../..'
 
 # project #
-alias short-rofi='cd /home/anno/coding/bash-script/short_rofi'
-alias web='cd /home/anno/coding/Web-site/git-andranux_de'
-alias my='cd /home/anno/coding/git_my'
-alias macli='cd /home/anno/coding/golang/matrix-bot/matcli'
-alias dotconf='cd /home/anno/.dotconf'
+alias short-rofi='cd $HOME/coding/bash-script/short_rofi'
+alias web='cd $HOME/coding/Web-site/git-andranux_de'
+alias my='cd $HOME/coding/git_my'
+alias macli='cd $HOME/coding/golang/matrix-bot/matcli'
+alias dotconf='cd $HOME/.dotconf'
 
 alias git_manga='git add weeb/manga.html && git commit -m "add new mangas" && git push'
 
-alias qd='cd /home/l-file/qemu'
-alias down='cd /home/anno/Downloads'
-alias l-file='cd /home/l-file'
 
 ### History ###
 ###############
