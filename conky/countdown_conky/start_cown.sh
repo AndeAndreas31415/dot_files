@@ -5,11 +5,15 @@ readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # the first argument must not be empty
 if [ $# -eq 0 ]; then
-    echo -e "You must give the Script a date or a time with sec.\n"
+    echo -e "You must give the Script a date.\n"
     echo -e "  examples : \"16:15:00\""
     echo -e "           : \"2022-05-24 15:00:00\""
-    echo -e "\n\nOr you have the countdown time calculated.\n"
+    echo -e "\nOr you have the countdown time calculated.\n"
     echo -e "  examples : \"+500\""
+    echo -e "             \"+2m\""
+    echo -e "             \"+2h\""
+    echo -e "\nAnd you can add some Text.\n"
+    echo -e "  examples : \"+500 Text\""
     exit 0
 fi
 
