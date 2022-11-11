@@ -1,0 +1,21 @@
+(defpoll list :interval "1s" "cat ~/todo.txt")
+
+(defwindow todolist
+	:monitor 0
+	:windowtype "desktop"
+	:stacking "bg"
+	:wm-ignore false
+	:geometry (geometry
+		:x "5px"
+		:y "35px"
+		:width "300px"
+		:height "1035px"
+	)
+	(box :orientation "v"
+		(box :class "header" :orientation "h"
+			(label :class "todo" :halign "end":text "ToDo:")
+			(button :class "btn" :onclick "gedit ~/todo.txt &")
+		)
+		(label :class "list" :halign "start" :valign "start" :text list)
+	)
+)
