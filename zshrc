@@ -55,8 +55,8 @@ autoload -U history-search-end
 setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt APPEND_HISTORY
 
-bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward
+bindkey "^[[5~" history-incremental-search-backward
+bindkey "^[[6~" history-incremental-search-forward
 
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000000000 
