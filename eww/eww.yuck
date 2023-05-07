@@ -1,6 +1,6 @@
-(defpoll list :interval "1s" "cat ~/todo.txt")
+(defpoll day :interval "5s" "date +%e")
 
-(defwindow todolist
+(defwindow cal
 	:monitor 0
 	:windowtype "desktop"
 	:stacking "bg"
@@ -9,13 +9,14 @@
 		:x "5px"
 		:y "35px"
 		:width "300px"
-		:height "1035px"
+		:height "220px"
 	)
 	(box :orientation "v"
 		(box :class "header" :orientation "h"
-			(label :class "todo" :halign "end":text "ToDo:")
-			(button :class "btn" :onclick "gedit ~/todo.txt &")
+			(label :class "todo" :halign "center" :text "Calender")
 		)
-		(label :class "list" :halign "start" :valign "start" :text list)
+		(box :class "calen" :orientation "h"
+			(calendar)
+    		)
 	)
 )
