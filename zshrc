@@ -40,10 +40,7 @@ alias ........='cd ../../../..'
 alias ..........='cd ../../../../..'
 
 # project #
-alias short-rofi='cd $HOME/coding/bash-script/short_rofi'
-alias web='cd $HOME/coding/Web-site/git-andranux_de'
-alias my='cd $HOME/coding/git_my'
-alias macli='cd $HOME/coding/golang/matrix-bot/matcli'
+alias web='cd $HOME/coding/Web-site/Andra_Web'
 alias dotconf='cd $HOME/.dotconf'
 
 alias git_manga='git add weeb/manga.html && git commit -m "add new mangas" && git push'
